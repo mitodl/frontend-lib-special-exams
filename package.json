@@ -1,7 +1,7 @@
 {
-  "name": "@edx/frontend-lib-special-exams",
+  "name": "@mitodl/frontend-lib-special-exams-mitol",
   "version": "1.14.0",
-  "description": "Special exams lib",
+  "description": "Special exams lib for MIT applications",
   "main": "dist/index.js",
   "release": {
     "branches": [
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edx/frontend-lib-special-exams.git"
+    "url": "git+https://github.com/mitodl/frontend-lib-special-exams-mitol.git"
   },
   "publishConfig": {
     "access": "public"
@@ -38,9 +38,9 @@
     }
   },
   "license": "AGPL-3.0",
-  "homepage": "https://github.com/edx/frontend-lib-special-exams",
+  "homepage": "https://github.com/mitodl/frontend-lib-special-exams-mitol",
   "bugs": {
-    "url": "https://github.com/edx/frontend-lib-special-exams/issues"
+    "url": "https://github.com/mitodl/frontend-lib-special-exams-mitol/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.34",

@@ -183,7 +183,7 @@ describe('SequenceExamWrapper', () => {
       </ExamStateProvider>,
       { store },
     );
-    expect(getByTestId('proctored-exam-instructions-title')).toHaveTextContent('Your proctoring session was reviewed successfully.');
+    expect(getByTestId('proctored-exam-instructions-title')).toHaveTextContent('Exams are being reviewed and a final grade will be available soon.');
   });
 
   it('Instructions are shown when attempt status is rejected', () => {

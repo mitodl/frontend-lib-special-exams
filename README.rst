@@ -1,4 +1,4 @@
-frontend-lib-special-exams
+frontend-lib-special-exams-mitol
 =================================
 
 This is a react library responsible for extending learning app with special exams functionality, e.g. proctored/timed exams. 
@@ -8,7 +8,7 @@ Set up instructions
 
 1. Clone your new repo:
 
-  ``git clone https://github.com/edx/frontend-lib-special-exams.git``
+  ``git clone https://github.com/mitodl/frontend-lib-special-exams-mitol.git``
 
 2. Use node v12.x.
 
@@ -16,7 +16,31 @@ Set up instructions
 
 3. Install npm dependencies:
 
-  ``cd frontend-lib-special-exams && npm install``
+  ``cd frontend-lib-special-exams-mitol && npm install``
+
+
+Local Development
+-----------------
+
+For local development and testing follow these steps. (Learning MFE (``frontend-app-learning``) is the parent app of ``frontend-lib-special-exams-mitol``)
+
+* Clone ``frontend-lib-special-exams-mitol`` into ``frontend-app-learning directory``.
+* Change directory to the ``frontend-lib-special-exams-mitol`` and run the following commands:
+
+    npm i
+
+    npm build
+* Verify a ``dist/`` folder has been created.
+* Change directory back to ``frontend-app-learning`` and create a ``module.config.js`` file
+* Place the following code in the module.config.js::
+
+        module.exports = {
+          localModules: [
+            { moduleName: '@edx/frontend-lib-special-exams-mitol', dir: './packages/frontend-lib-special-exams-mitol', dist: 'src' },
+          ],
+        };
+* Restart ``frontend-app-learning`` e.g. (``docker-compose restart frontend-app-learning``) and verify that it is using the local version from @mitol/frontend-lib-special-exams
+* For css changes you might need to rebuild again.
 
 Build Process Notes
 -------------------
