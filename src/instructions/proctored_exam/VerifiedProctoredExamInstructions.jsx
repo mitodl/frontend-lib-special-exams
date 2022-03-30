@@ -6,7 +6,8 @@ const VerifiedProctoredExamInstructions = () => (
     <h3 className="h3" data-testid="proctored-exam-instructions-title">
       <FormattedMessage
         id="exam.VerifiedProctoredExamInstructions.title"
-        defaultMessage={'Exams are being reviewed and a final grade will be available soon.'}
+        defaultMessage={'Your exam was submitted successfully. Exams are being '
+        + 'reviewed and a final grade will be available soon.'}
       />
     </h3>
   </div>
